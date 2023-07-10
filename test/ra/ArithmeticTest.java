@@ -26,4 +26,33 @@ class ArithmeticTest {
         boolean excepted = false;
         assertEquals(excepted,Arithmetic.isEven(number));
     }
+    @Test
+    void testIsPrime_1(){
+        // mã kiểm thử
+        // input : 1 - output: false
+        int number=-1;
+        boolean excepted = false;
+        assertEquals(excepted,Arithmetic.isPrime(number));
+    } @Test
+    void testIsPrime1(){
+        // mã kiểm thử
+        // input : 1 - output: false
+        int number=1;
+        boolean excepted = false;
+        assertEquals(excepted,Arithmetic.isPrime(number));
+    } @Test
+    void testIsPrime2(){
+        // mã kiểm thử
+        // input : 1 - output: false
+        int number=2;
+        boolean excepted = true;
+        assertEquals(excepted,Arithmetic.isPrime(number));
+    } @Test
+    void testIsPrime9(){
+        // mã kiểm thử
+        // input : 1 - output: false
+        int number=9;
+        boolean excepted = false;
+        assertEquals(excepted,Arithmetic.isPrime(number));
+    }
 }
